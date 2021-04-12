@@ -1,0 +1,12 @@
+<!-- navToMyProfile.html
+    Purpose: Create a component that can be invoked via a Global Action for a sites' User Profile Menu.
+    This solved the issue when using /profile/home and then the My Profile page URL does not display
+    the recordId for the user until a refresh. The recordId is needed on the My Profile page to inprove
+    the delegated (portal super user) admin workflow.
+
+    4/11/21 Created
+-->
+<template>  
+    <!-- Open /profile/{!recordId} -->
+    <lightning-button label="Navigate to My Profile" onclick={navigateToMyProfile}></lightning-button>
+</template>
